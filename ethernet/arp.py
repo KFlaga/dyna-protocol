@@ -30,5 +30,5 @@ ARP["Header"] = Structure(attributes = [PackedAttribute()], fields = [
     Field("senderHardwareAddress", Reference("MACAddress", ethernet.Ethernet)),
     Field("senderProtocolAddress", Reference("IPAddress", ethernet.Ethernet)),
     Field("targetHardwareAddress", Reference("MACAddress", ethernet.Ethernet)),
-    Field("targetProtocolAddress", Reference("MACAddress", ethernet.Ethernet)),
+    Field("targetProtocolAddress", Reference("IPAddress", ethernet.Ethernet)),
 ])
